@@ -7,3 +7,9 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+"criterion" = "0.3"
+"walkdir" = "2.3.1"
+
+[[bench]]
+name = "bob2020"
+harness = false
