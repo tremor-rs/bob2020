@@ -24,7 +24,7 @@ $ cargo critcmp
 
 ## Sample report
 
-[Criterion Report](./report/report/index.html)
+[Criterion Report](https://raw.githack.com/wayfair-tremor/bob2020/master/report/report/index.html)
 
 ## Known issues
 
