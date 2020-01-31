@@ -15,11 +15,15 @@
 use criterion::criterion_group;
 use criterion::Criterion;
 use criterion::Fun;
-
+use rand::prelude::*;
 use std::borrow::Cow;
 
 fn user_input() -> &'static str {
-    "test" // fake corpus of well known inputs
+    if rand::random::<u8>() % 3 == 0 {
+        "test"
+    } else {
+        "badger"
+    }
 }
 
 pub fn static_borrow_slow() {

@@ -19,7 +19,7 @@ $ cargo install critcmp
 Summarise benchmark results
 
 ```bash
-$ cargo critcmp
+$ critcmp
 ```
 
 ## Sample report
@@ -28,6 +28,4 @@ $ cargo critcmp
 
 ## Known issues
 
-Currently `rustc` optimises the `Static Borrow/Borrowed COW` test invalidating any comparison
-for the `Static Borrow` micro-benchmark. This is a tooling issue and a drawback / reality with
-micro-benchmarking with any tool / programming language; so we let the issue hang wet.
+We had to introduce a random function to emulate user input for the Cow bench mark.
