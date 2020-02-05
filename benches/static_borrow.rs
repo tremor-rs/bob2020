@@ -32,7 +32,7 @@ pub fn static_borrow_slow() {
     let mut i = 0;
     loop {
         let input = user_input();
-        let _s: Cow<'static, str> = Cow::Owned(String::from(input));
+        let _s = String::from(input);
         if i > 10000 {
             break;
         }
@@ -49,7 +49,7 @@ pub fn static_borrow_fast() {
             "well" => Cow::Borrowed("well"),
             "know" => Cow::Borrowed("know"),
             // Unknown
-            _ => Cow::Owned(s.to_string()),
+            _ => Cow::Owned(String::from(s)),
         }
     }
 
